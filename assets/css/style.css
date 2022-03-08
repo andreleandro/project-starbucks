@@ -138,7 +138,6 @@ header .line {
     line-height: 25px;
 }
 .area1--img1 {
-    background-color: green;
     height: 350px;
     background-image: url('../images/f2.jpg');
     background-size: cover;
@@ -243,3 +242,72 @@ footer {
 
 /* Responsividade */
 
+@media (min-width: 769px) and (max-width: 1140px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media (min-width: 477px) and (max-width: 768px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .area1 {
+        grid-template-columns: 3fr 2fr;
+    }
+    .area2 {
+        grid-template-columns: 2fr 3fr;
+    }
+    .area3 {
+        grid-template-columns: 3fr 2fr;
+    }
+}
+@media (max-width: 476px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .header--menu {
+        margin-left: 20px;
+    }
+    .header--search input {
+        max-width: 100px;
+    }
+    h1 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    h2 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .banner--images img {
+        width: 70px;
+        height: 70px;
+        border: 3px solid var(--main-color);
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    .area1,
+    .area2,
+    .area3,
+    .area4 {
+        grid-template-columns: 1fr;
+    }
+    .area1--content,
+    .area2--content,
+    .area3--content,
+    .area4-content {
+        padding: 40px;
+    }
+    .area5 {
+        height: 200px;
+    }
+    footer {
+        font-size: 12px;
+        padding: 40px 20px;
+    }
+
+}
