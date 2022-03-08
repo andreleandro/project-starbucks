@@ -1,21 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Oswald:wght@400;700&display=swap');
+
+:root {
+    --main-color: #117050;
+}
+
 * {
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
 }
+
 .container {
     max-width: 1140px;
     margin: auto;
+}
+.title {
+    font-family: 'Oswald', sans-serif;
 }
 
 /*Header*/
 
 header .line {
-    background-color: #117050;
+    background-color: var(--main-color);
     height: 10px;
 }
 .header--area {
@@ -63,3 +73,30 @@ header .line {
 }
 
 /*Banner*/
+
+.banner {
+    background-image: url('../images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.banner h1 {
+    /*font-size: 6rem;*/
+    font-size: 90px;
+    font-weight: bold;
+    line-height: 100px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+.banner--images {
+    margin-top: 60px;
+}
+.banner--images img {
+    width: 148px;
+    height: 148px;
+    border: 6px solid var(--main-color);
+    border-radius: 50%;
+    margin-right: 40px;
+}
+
